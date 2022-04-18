@@ -1,0 +1,231 @@
+
+/* general styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+:root {
+  --main-bg: #02111B;
+  --clr-pry: #5D737E;
+  --clr-pry-1: #FCFCFC;
+  --clr-onyx: #3F4045;
+  --fnt-family: 'Montserrat', sans-serif;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   /* border: 1px solid red; */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: var(--main-bg);
+  font-family: var(--fnt-family);
+}
+
+hr {
+  margin: 0;
+}
+
+.container {
+  margin: 0 5rem;
+}
+
+.education-section, .experience-section, .connection-section, .footer-section {
+  padding: 2rem 0;
+}
+
+ /* end of general styles */
+
+
+ /* navbar component style */
+.navbar-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 1rem 0;
+  /* background-color: var(--clr-onyx); */
+}
+
+.navbar-logo {
+  margin-left: 3.5em;
+}
+
+.logo-text {
+  color: var(--clr-pry-1);
+}
+
+.logo-text span {
+  color: var(--clr-pry);
+}
+
+.nav {
+  margin-right: 3.5em;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav li {
+  margin-right: 1.5em;
+}
+
+.menu-nav li a {
+  color: var(--clr-pry);
+  font-weight: 600;
+}
+
+/* hero component styles */
+.hero-section {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  padding: 15rem 0;
+
+}
+
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-intro > * {
+  margin-bottom: 1em;
+}
+
+.hero-intro h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--clr-pry-1);
+}
+
+.occupation, .hello {
+  color: var(--clr-pry);
+}
+
+/* Intro component */
+.section-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.section-intro h1 {
+  margin-bottom: 1em;
+  color: var(--clr-pry-1);
+  font-weight: 700;
+}
+
+.section-intro hr {
+  width: 100px;
+}
+
+/* ExpCard component styles */
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.right {
+  justify-self: flex-end;
+  background: red;
+}
+
+.exp-splitter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.exp-details {
+  display: flex;
+  /* flex-direction: column; */
+  /* border: 1px solid var(--clr-onyx); */
+  z-index: -3;
+  padding: 1em;
+  
+}
+
+.bullet-icon {
+  margin-right: 10px;
+}
+
+.exp-info {
+  margin-right: 1em;
+  max-width: 100%;
+}
+
+.exp-info > * {
+  margin-bottom: 1em;
+}
+
+.exp-info .position {
+  font-size: 1.5rem;
+  color: var(--clr-pry);
+}
+
+.exp-info .company {
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--clr-pry);
+}
+
+.exp-info .dates {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--clr-pry-1);
+}
+
+.tasks {
+  color: var(--clr-pry);
+  line-height: 1.5;
+}
+
+
+/* connection component styles */
+.icon-splitter {
+  display: flex;
+  justify-content: center;
+}
+.icons {
+  font-size: 3.5rem;
+  color: var(--clr-onyx);
+  margin-right: 10px;
+}
+
+.icons:hover {
+  color: var(--clr-pry-1);
+  transition: 0.6s ease-in-out;
+}
+
+/* footer component styles */
+.footer-section {
+  display: grid;
+  place-items: center;
+}
+
+.footer-section h4 {
+  color: var(--clr-pry-1);
+}
+
+.footer-section .devname{
+  color: pink;
+}
