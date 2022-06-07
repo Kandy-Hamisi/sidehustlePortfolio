@@ -19,12 +19,12 @@ function Experience() {
             <Intro title="My Experience" />
 
             <div className="exp-splitter">
-                <ExpCard
-                 company="GDSC Mount Kenya University"
-                 position="Frontend Web Developer Member"
-                 companyrole="Web Developer"
-                 date="Aug 2019 - present"
-                 task={gdscMku}
+            <ExpCard
+                 company="Zuri"
+                 position="Full Stack Developer"
+                 companyrole="Intern"
+                 date="Apr 2022 - present"
+                 task={sideHustleTasks}
                 />
                 <ExpCard
                  company="Side Hustle"
@@ -39,6 +39,13 @@ function Experience() {
                  companyrole="Attache"
                  date="Apr 2021 - Aug 2021"
                  task={sideHustleTasks}
+                />
+                <ExpCard
+                 company="GDSC Mount Kenya University"
+                 position="Frontend Web Developer Member"
+                 companyrole="Web Developer"
+                 date="Aug 2019 - present"
+                 task={gdscMku}
                 />
             </div>
 

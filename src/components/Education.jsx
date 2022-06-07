@@ -9,6 +9,13 @@ function Education() {
 
             <div className="exp-splitter">
                 <EduCard
+                 company="ALX Software Engineering"
+                 position="Software Engineering"
+                 companyrole="Cohort 7"
+                 date="May 2022 - Present"
+                 task=""
+                />
+                <EduCard
                  company="Mount Kenya University"
                  position="Bsc Information Technology"
                  companyrole="2nd Class Upper Division"

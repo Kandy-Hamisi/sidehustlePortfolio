@@ -56,7 +56,7 @@ hr {
   align-items: center;
   position: fixed;
   padding: 1rem 0;
-  /* background-color: var(--clr-onyx); */
+  background-color: var(--clr-onyx);
 }
 
 .navbar-logo {
@@ -67,8 +67,29 @@ hr {
   color: var(--clr-pry-1);
 }
 
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 2.5vw;
+  }
+}
+
 .logo-text span {
   color: var(--clr-pry);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-btn {
+  color: var(--clr-pry-1);
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+    margin-right: 3.5em;
+  }
 }
 
 .nav {
@@ -87,6 +108,25 @@ hr {
 .menu-nav li a {
   color: var(--clr-pry);
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .menu-nav {
+    flex-direction: column;
+  }
+  .nav {
+    position: absolute;
+    margin-top: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--clr-pry-1);
+    width: 90vw;
+    display: none;
+  }
+
+  .menu-nav li {
+    margin: 1.5em 0;
+  }
 }
 
 /* hero component styles */

@@ -14,7 +14,6 @@ function EduCard(props) {
                         <h4 className='position'>{props.position}</h4>
                         <h5 className='company'>{props.company} . {props.companyrole}</h5>
                         <h6 className='dates'>{props.date}</h6>
-                        
                     </div>
                 </div>                
             </div>
