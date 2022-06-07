@@ -57,6 +57,7 @@ hr {
   position: fixed;
   padding: 1rem 0;
   background-color: var(--clr-onyx);
+  z-index: 3;
 }
 
 .navbar-logo {
@@ -108,6 +109,11 @@ hr {
 .menu-nav li a {
   color: var(--clr-pry);
   font-weight: 600;
+}
+
+.menu-nav li a:hover {
+  transition: 0.3s ease;
+  color: var(--clr-pry-1);
 }
 
 @media (max-width: 768px) {
@@ -268,4 +274,63 @@ hr {
 
 .footer-section .devname{
   color: pink;
+}
+
+/* project-section */
+
+.project-section {
+  margin: 0 3rem;
+}
+
+/* .project-item {
+  position: relative;
+} */
+
+.project-displays {
+  position: relative;
+}
+
+.project-detail-card {
+  background: var(--clr-onyx);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30%;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 3px 1px 3px var(--clr-onyx);
+}
+
+.project-img img{
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  border: 3px solid var(--clr-pry);
+  border-radius: 3px;
+}
+
+.project-img img:hover {
+  transition: 0.6s ease-in-out;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));  
+  filter: grayscale(2);
+}
+
+.project-techs {
+  margin-top: 0.5rem;
+  color: #FCFCFC;
+}
+
+.project-techs span{
+  margin-right: 1em;
+}
+
+.floater {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.floater .project-detail-card {
+  left: -50%;
 }

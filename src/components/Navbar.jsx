@@ -30,6 +30,12 @@ function Navbar() {
                             <a href="#education">Education</a>
                         </li>
                         <li>
+                            <a href="#education">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#education">Gifts</a>
+                        </li>
+                        <li>
                             <a href="#connect">Connect</a>
                         </li>
                     </ul>

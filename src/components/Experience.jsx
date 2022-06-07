@@ -15,7 +15,7 @@ function Experience() {
         'Working with Frontend APIs'
     ]
     return ( 
-        <div className='experience-section' id="experience">
+        <section className='experience-section' id="experience">
             <Intro title="My Experience" />
 
             <div className="exp-splitter">
@@ -49,7 +49,7 @@ function Experience() {
                 />
             </div>
 
-        </div>
+        </section>
      );
 }
 
