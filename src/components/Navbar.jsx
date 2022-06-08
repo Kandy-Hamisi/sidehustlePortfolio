@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
    
@@ -21,10 +22,10 @@ function Navbar() {
                 <nav className="nav">
                     <ul className="menu-nav">
                         <li>
-                            <a href="#Home">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="#experience">Experience</a>
+                            <Link to={''}>Experience</Link>
                         </li>
                         <li>
                             <a href="#education">Education</a>
@@ -33,7 +34,7 @@ function Navbar() {
                             <a href="#education">Projects</a>
                         </li>
                         <li>
-                            <a href="#education">Gifts</a>
+                            <Link to="/gifts">Gifts</Link>
                         </li>
                         <li>
                             <a href="#connect">Connect</a>

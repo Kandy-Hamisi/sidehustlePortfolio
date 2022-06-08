@@ -6,20 +6,23 @@ import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import OtherProjects from './components/OtherProjects';
-import Projects from './components/Projects';
+// import OtherProjects from './components/OtherProjects';
+// import Projects from './components/Projects';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Index from './pages/Home/Index';
+import GiftIndex from './pages/Gifts/GiftIndex';
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Experience />
-      <Education />
-      <Projects />
-      <OtherProjects />
-      <Connect />
-      <Footer />
+      <Router>
+        <Navbar />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/gifts" element={<GiftIndex />} />
+          </Routes>
+        <Footer />
+      </Router>
     </div>
   )
 }

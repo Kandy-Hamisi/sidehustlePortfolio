@@ -278,8 +278,17 @@ hr {
 
 /* project-section */
 
-.project-section {
+
+
+.project-section, .other-projects {
+  overflow: hidden;
   margin: 0 3rem;
+}
+
+
+.project-info {
+  margin: 1em 0;
+  color: #fff;
 }
 
 /* .project-item {
@@ -333,4 +342,65 @@ hr {
 
 .floater .project-detail-card {
   left: -50%;
+}
+
+/* simple projects section */
+.project-card {
+  border-radius: 10px;
+  box-shadow: 3px 1px -12px var(--clr-onyx);
+  max-width: 300px;
+  transform-origin: left;
+  transition: 0.6s ease-in;
+}
+.project-card-img img {
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.simple-project-splitter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.show-more {
+  display: grid;
+  place-items: center;
+  margin: 1em 0;
+  font-weight: 700;
+}
+
+.show-more h3 {
+  cursor: pointer;
+  color: var(--clr-pry);
+}
+
+.later-display {
+  margin-top: 1em;
+  animation-duration: 1s;
+  animation-name: slide-up;
+}
+
+@keyframes slide-up {
+  0% {
+    margin-top: 20%;
+  }
+  100% {
+    margin-top: 1em;
+  }
+}
+
+
+/* gift css */
+
+.gift-section {
+  padding-top: 8rem;
+}
+
+.gift-information {
+  color: var(--clr-pry-1);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
